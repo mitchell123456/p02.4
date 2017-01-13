@@ -29,4 +29,12 @@ def run_tests():
 
 def is_repeated(nums):
 
+    if nums.count(nums[0]) > 1:
+        print("Repeated")
+
+    else:
+        print("Unique")
+        
+        
+
 

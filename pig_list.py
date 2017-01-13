@@ -26,4 +26,10 @@ def run_tests():
 
 def rotate(nums):
 
+    if len(nums) == 1 or len(nums) == 0:
+        print(nums)
 
+    else:
+        nums.insert(len(nums), nums[0])
+        nums.remove(nums[0])
+        print(nums)

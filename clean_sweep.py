@@ -30,4 +30,19 @@ def run_tests():
 
 def clean(nums, n):
 
+    length = len(nums) - 1
+    count = 0
+
+    for num in nums:
+        if n == nums[num - 1]:
+            nums.pop(num - 1)
+            nums.insert(len(nums), n)
+            count = count + 1
+
+    for i in range(count):
+        nums.pop(len(nums) - 1)
+
+    print(nums)
+
+
 
